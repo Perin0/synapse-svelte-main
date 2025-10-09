@@ -1,9 +1,9 @@
 <script>
-    let username = $state({})
+    let username = $state()
 </script>
 <h1>Cadastrar</h1>
 <div class="container">
-    <img src="" alt="">
+    <img src="https://img.freepik.com/premium-vector/e-learning-education-process-training-application-mobile-app-development-courses_566886-3834.jpg" alt="Imagem de cadastro">
     <div class="form-container">
         <p>Bem-vindo pela primeira vez</p>
         <form>
@@ -21,6 +21,9 @@
 </div>
 
 <style>
+    p{
+        font-size: 1.25rem;
+    }
     .radio-container{
         display: flex;
         flex-direction: row;
@@ -40,6 +43,16 @@
         height: 500px;
         margin-left: auto;
         padding: 2rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .form-container{
+        position: relative;
+        top: 50%;
+        transform: translateY(25%);
     }
 
 </style>

@@ -12,4 +12,7 @@
 		display: flex;
 		flex-direction: row;
 	}
+	*{
+		font-family: "inter", sans-serif;
+	}
 </style>
