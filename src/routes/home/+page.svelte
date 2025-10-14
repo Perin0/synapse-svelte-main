@@ -1,5 +1,5 @@
 <script>
-    import username from '../login/+page.svelte'
+    import { username } from '../../lib/svelte-stores';
 </script>
 <div class="aside">
     <div class="item">
@@ -26,7 +26,7 @@
 
 <div class="center-container">
     <input type="text">
-    <h1>bem vindo de volta </h1>
+    <h1>bem vindo de volta {$username}</h1>
     Proximos compromisso
     <div class="compromissos">
         <img>

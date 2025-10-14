@@ -1,5 +1,5 @@
-<script>
-    let username = $state()
+<script lang="ts">
+    import { username } from '../../lib/svelte-stores';
 </script>
 <h1>Cadastrar</h1>
 <div class="container">
@@ -7,7 +7,7 @@
     <div class="form-container">
         <p>Bem-vindo pela primeira vez</p>
         <form>
-            <input bind:value={username} type="text" name="username" id="username">
+            <input bind:value={$username} type="text" name="username" id="username">
             <input type="text" name="senha">
             <div class="radio-container">
                 <input type="radio" name="op" id="ap" value="Qro Aprender">
